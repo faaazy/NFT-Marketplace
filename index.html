@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Marketplace</title>
+    <link
+      rel="shortcut icon"
+      href="./img/header/header-logo.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="nav__logo">
+            <a href="#!"><img src="./img/header/header-logo.svg" alt="" /></a>
+          </div>
+          <div class="nav__links">
+            <ul class="nav__list">
+              <li><a href="#!" class="nav__link link-active">Explore</a></li>
+              <li><a href="#creators" class="nav__link">Creators</a></li>
+              <li><a href="#creators" class="nav__link">Community</a></li>
+            </ul>
+            <div class="header__btn">
+              <a href="#!" class="btn">Connect&nbsp;Wallet</a>
+            </div>
+          </div>
+          <button type="button" class="nav__toggle">
+            <div class="menu-icon-wrapper">
+              <div class="menu-icon"></div>
+            </div>
+          </button>
+        </nav>
+        <div class="header__row">
+          <div class="header__content">
+            <h1 class="header__title">
+              Explore, Buy and Sell the <span>Best NFTs!</span>
+            </h1>
+            <div class="header__content-btns">
+              <a href="#!" class="header__content-btn primary-btn">Explore</a>
+              <a href="#!" class="header__content-btn btn">Create</a>
+            </div>
+            <div class="header__content-qnt">
+              <div class="qnt__item">
+                <div class="qnt__item-title">32k+</div>
+                <div class="qnt__item-desc">Artworks</div>
+              </div>
+              <div class="qnt__item">
+                <div class="qnt__item-title">20k+</div>
+                <div class="qnt__item-desc">Auctions</div>
+              </div>
+              <div class="qnt__item">
+                <div class="qnt__item-title">12k+</div>
+                <div class="qnt__item-desc">Creators</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__cart">
+            <div class="header__cart-confetties">
+              <img src="./img/header/header-confetti.svg" alt="" />
+            </div>
+            <div class="header__candy-img">
+              <img src="./img/header/header-candy.png" alt="" />
+            </div>
+            <div class="header__cart-badge">
+              <div class="header__cart-badge-curr">
+                <div class="curr__text">Current Bid</div>
+                <div class="curr_price">0.99 ETH</div>
+              </div>
+              <div class="header__cart-badge-end">
+                <div class="end-text">Ends in</div>
+                <div class="end-hours">25 hrs</div>
+              </div>
+            </div>
+            <div class="header__cart-bottom">
+              <div class="cart-bottom-artist">
+                <div class="cart-bottom-artist-text">Artist</div>
+                <div class="cart-bottom-artist-id">@wzard</div>
+              </div>
+              <a href="#!" class="cart-bottom-btn primary-btn"
+                >Start&nbsp;Bid</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="#auctions" class="header__arrow-down-cont">
+          <div class="header__arrow-down">
+            <img src="./img/header/header-arrow.svg" alt="" />
+          </div>
+        </a>
+        <div class="header__row-footer">
+          <div class="header__row-footer-img">
+            <img src="./img/header/coinbase.png" alt="" />
+          </div>
+          <div class="header__row-footer-img">
+            <img src="./img/header/blockchain.png" alt="" />
+          </div>
+          <div class="header__row-footer-img">
+            <img src="./img/header/binance.png" alt="" />
+          </div>
+          <div class="header__row-footer-img">
+            <img src="./img/header/bitmex.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="auctions" class="auctions">
+        <div class="auctions__title-wrapper">
+          <img class="circle" src="./img/auc/auc-circle.svg" alt="" />
+          <div class="auctions__title">Live Auctions</div>
+        </div>
+        <div class="container-right">
+          <div class="auc-swiper">
+            <div id="auc-swiper" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-img.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img src="./img/auc/auc-like.svg" alt="" />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-slider-img2.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <div class="slider__item-likes-row">
+                      <img src="./img/auc/auc-like.svg" alt="" />
+                      <div class="slider__item-likes">92</div>
+                    </div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-img.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img src="./img/auc/auc-like.svg" alt="" />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-img.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img src="./img/auc/auc-like.svg" alt="" />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-img.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img src="./img/auc/auc-like.svg" alt="" />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+                <div class="slider__item swiper-slide">
+                  <div class="slider__item-img">
+                    <img src="./img/auc/auc-img.jpg" alt="" />
+                    <div class="slider__item-time">03:18:24</div>
+                  </div>
+                  <div class="slider__item-row">
+                    <img src="./img/auc/auc-profile_img.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img src="./img/auc/auc-like.svg" alt="" />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                  <a href="#!" class="slider__item-btn btn">Place a bid</a>
+                </div>
+              </div>
+            </div>
+            <button id="btnPrev" class="slider__btn slider__btn--prev">
+              <img src="./img/auc/auc-right.svg" alt="" />
+            </button>
+            <button id="btnNext" class="slider__btn slider__btn--next">
+              <img src="./img/auc/auc-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="auctions__bottom-btn">
+          <a href="#!" class="btn">View All</a>
+        </div>
+      </section>
+      <section class="how">
+        <div class="container">
+          <div class="how__title">How it works</div>
+          <div class="how__row">
+            <div class="how__item how-wallet">
+              <div class="how__item-img">
+                <img src="./img/how/how-create.svg" alt="" />
+              </div>
+              <div class="how__item-text">Set up your wallet</div>
+            </div>
+            <div class="how__item how-create">
+              <div class="how__item-img">
+                <img src="./img/how/how-wallet.svg" alt="" />
+              </div>
+              <div class="how__item-text">Create your collection</div>
+            </div>
+            <div class="how__item how-add">
+              <div class="how__item-img">
+                <img src="./img/how/how-add.svg" alt="" />
+              </div>
+              <div class="how__item-text">Add Your NFTs</div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-img">
+                <img src="./img/how/how-list.svg" alt="" />
+              </div>
+              <div class="how__item-text">List them for sale</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collections">
+        <div class="collections__title-wrapper">
+          <img
+            class="col-circle"
+            src="./img/collections/collections-circle.svg"
+            alt=""
+          />
+          <div class="collections__title">Popular Collections</div>
+        </div>
+
+        <div class="container-right">
+          <div class="col-swiper">
+            <div id="col-swiper" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="col-slider__item swiper-slide">
+                  <div class="col-slider__img">
+                    <img src="./img/collections/collection-img.jpg" alt="" />
+                  </div>
+                  <div class="col-profile__row">
+                    <div class="col-profile__img">
+                      <img
+                        src="./img/collections/collections-profile-img.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-profile__at">@wzard</div>
+                    <div class="col-profile__code">ERC-721</div>
+                  </div>
+                </div>
+                <div class="col-slider__item swiper-slide">
+                  <div class="col-slider__img">
+                    <img src="./img/collections/collection-img.jpg" alt="" />
+                  </div>
+                  <div class="col-profile__row">
+                    <div class="col-profile__img">
+                      <img
+                        src="./img/collections/collections-profile-img.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-profile__at">@wzard</div>
+                    <div class="col-profile__code">ERC-721</div>
+                  </div>
+                </div>
+                <div class="col-slider__item swiper-slide">
+                  <div class="col-slider__img">
+                    <img src="./img/collections/collection-img.jpg" alt="" />
+                  </div>
+                  <div class="col-profile__row">
+                    <div class="col-profile__img">
+                      <img
+                        src="./img/collections/collections-profile-img.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-profile__at">@wzard</div>
+                    <div class="col-profile__code">ERC-721</div>
+                  </div>
+                </div>
+                <div class="col-slider__item swiper-slide">
+                  <div class="col-slider__img">
+                    <img src="./img/collections/collection-img.jpg" alt="" />
+                  </div>
+                  <div class="col-profile__row">
+                    <div class="col-profile__img">
+                      <img
+                        src="./img/collections/collections-profile-img.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-profile__at">@wzard</div>
+                    <div class="col-profile__code">ERC-721</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="col-btnNext" class="slider__btn col-slider__btn--next">
+              <img src="./img/auc/auc-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="auctions__bottom-btn">
+          <a href="#!" class="btn">View All</a>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories__title-wrapper">
+          <div class="cat-circle"></div>
+          <div class="categories__title">Explore By Categories</div>
+        </div>
+        <div class="container-right">
+          <div class="cat-swiper">
+            <div id="cat-swiper" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="cat-slider__item swiper-slide">
+                  <div class="cat-slider__img">
+                    <img src="./img/categories/categories-img.jpg" alt="" />
+                    <div class="cat-slider__img-overlay">
+                      <div class="cat-slider__btn">
+                        <a href="#!" class="primary-btn">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cat-slider__item-row">
+                    <img src="./img/categories/categories-profile.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img
+                      src="./img/auc/auc-like.svg"
+                      alt=""
+                      class="cat-slider-like-img"
+                    />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                </div>
+                <div class="cat-slider__item swiper-slide">
+                  <div class="cat-slider__img">
+                    <img src="./img/categories/categories-img.jpg" alt="" />
+                    <div class="cat-slider__img-overlay">
+                      <div class="cat-slider__btn">
+                        <a href="#!" class="primary-btn">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cat-slider__item-row">
+                    <img src="./img/categories/categories-profile.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img
+                      src="./img/auc/auc-like.svg"
+                      alt=""
+                      class="cat-slider-like-img"
+                    />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                </div>
+                <div class="cat-slider__item swiper-slide">
+                  <div class="cat-slider__img">
+                    <img src="./img/categories/categories-img.jpg" alt="" />
+                    <div class="cat-slider__img-overlay">
+                      <div class="cat-slider__btn">
+                        <a href="#!" class="primary-btn">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cat-slider__item-row">
+                    <img src="./img/categories/categories-profile.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img
+                      src="./img/auc/auc-like.svg"
+                      alt=""
+                      class="cat-slider-like-img"
+                    />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                </div>
+                <div class="cat-slider__item swiper-slide">
+                  <div class="cat-slider__img">
+                    <img src="./img/categories/categories-img.jpg" alt="" />
+                    <div class="cat-slider__img-overlay">
+                      <div class="cat-slider__btn">
+                        <a href="#!" class="primary-btn">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cat-slider__item-row">
+                    <img src="./img/categories/categories-profile.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img
+                      src="./img/auc/auc-like.svg"
+                      alt=""
+                      class="cat-slider-like-img"
+                    />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                </div>
+                <div class="cat-slider__item swiper-slide">
+                  <div class="cat-slider__img">
+                    <img src="./img/categories/categories-img.jpg" alt="" />
+                    <div class="cat-slider__img-overlay">
+                      <div class="cat-slider__btn">
+                        <a href="#!" class="primary-btn">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cat-slider__item-row">
+                    <img src="./img/categories/categories-profile.png" alt="" />
+                    <div class="slider__item-profile">
+                      <div class="slider__item-name">Virtual Art</div>
+                      <div class="slider__item-by">by @wzard</div>
+                    </div>
+                    <img
+                      src="./img/auc/auc-like.svg"
+                      alt=""
+                      class="cat-slider-like-img"
+                    />
+                    <div class="slider__item-likes">92</div>
+                  </div>
+                  <div class="slider__item-curr">
+                    <div class="slider__item-curr-text">Current Bid</div>
+                    <div class="slider__item-curr-price">4.89 ETH</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="auctions__bottom-btn">
+          <a href="#!" class="btn">View All</a>
+        </div>
+      </section>
+      <section id="creators" class="creators">
+        <div class="creators__title-wrapper">
+          <div class="create-circle"></div>
+          <div class="creators__title">Top Creators</div>
+        </div>
+        <div class="creators-container">
+          <div class="creators__grid">
+            <div class="creators__item">
+              <div class="creators__img">
+                <img src="./img/creators/creators-profile-img.png" alt="" />
+              </div>
+              <div class="creators__profile-info">
+                <div class="creators__profile-profile-name">Wzard Dee</div>
+                <div class="creators__profile-info-qty">4.89 ETH</div>
+              </div>
+              <div class="creators__line">
+                <img src="./img/creators/creators-line.svg" alt="" />
+              </div>
+              <div class="creators__item-qty">
+                <div class="creators__item-number">33</div>
+                <div class="creators__item-items">items</div>
+              </div>
+            </div>
+            <div class="creators__item">
+              <div class="creators__img">
+                <img src="./img/creators/creators-profile-img.png" alt="" />
+              </div>
+              <div class="creators__profile-info">
+                <div class="creators__profile-profile-name">Wzard Dee</div>
+                <div class="creators__profile-info-qty">4.89 ETH</div>
+              </div>
+              <div class="creators__line">
+                <img src="./img/creators/creators-line.svg" alt="" />
+              </div>
+              <div class="creators__item-qty">
+                <div class="creators__item-number">33</div>
+                <div class="creators__item-items">items</div>
+              </div>
+            </div>
+            <div class="creators__item">
+              <div class="creators__img">
+                <img src="./img/creators/creators-profile-img.png" alt="" />
+              </div>
+              <div class="creators__profile-info">
+                <div class="creators__profile-profile-name">Wzard Dee</div>
+                <div class="creators__profile-info-qty">4.89 ETH</div>
+              </div>
+              <div class="creators__line">
+                <img src="./img/creators/creators-line.svg" alt="" />
+              </div>
+              <div class="creators__item-qty">
+                <div class="creators__item-number">33</div>
+                <div class="creators__item-items">items</div>
+              </div>
+            </div>
+            <div class="creators__item">
+              <div class="creators__img">
+                <img src="./img/creators/creators-profile-img.png" alt="" />
+              </div>
+              <div class="creators__profile-info">
+                <div class="creators__profile-profile-name">Wzard Dee</div>
+                <div class="creators__profile-info-qty">4.89 ETH</div>
+              </div>
+              <div class="creators__line">
+                <img src="./img/creators/creators-line.svg" alt="" />
+              </div>
+              <div class="creators__item-qty">
+                <div class="creators__item-number">33</div>
+                <div class="creators__item-items">items</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="auctions__bottom-btn">
+          <a href="#!" class="btn">View All</a>
+        </div>
+      </section>
+      <section class="ready">
+        <div class="ready__title">Ready for Next NFT Drop?</div>
+        <form action="" class="ready__form">
+          <input type="email" class="form__mail" placeholder="info@gmail.com" />
+          <button type="button" class="form__btn primary-btn">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__logo">
+            <img src="./img/footer/footer-logo.png" alt="" />
+          </div>
+          <div class="footer__second">
+            <div class="second__text">
+              Nec, enim sed lacus, magna pharetra. Phasellus tincidunt nulla
+              pharetra gravida est.
+            </div>
+            <div class="second__social">
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img
+                  src="./img/footer/footer-google.svg"
+                  alt=""
+                  class="social-img"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="./img/footer/footer-yt.svg" alt="" class="social-img"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                ><img src="./img/footer/footer-x.svg" alt="" class="social-img"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                ><img
+                  src="./img/footer/footer-face.svg"
+                  alt=""
+                  class="social-img"
+              /></a>
+            </div>
+            <div class="second__privacy">All rights reserved@2021</div>
+          </div>
+          <div class="footer__about-support">
+            <div class="footer__about">
+              <div class="footer__about-title">About Us</div>
+              <ul class="footer__about-list">
+                <li class="footer__about-list__item">About NFTs</li>
+                <li class="footer__about-list__item">Live Auctions</li>
+                <li class="footer__about-list__item">NFT Blog</li>
+                <li class="footer__about-list__item">Activity</li>
+              </ul>
+            </div>
+            <div class="footer__about">
+              <div class="footer__about-title">Support</div>
+              <ul class="footer__about-list">
+                <li class="footer__about-list__item">Help & Support</li>
+                <li class="footer__about-list__item">Item Details</li>
+                <li class="footer__about-list__item">Author Profile</li>
+                <li class="footer__about-list__item">Collection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="second__social second__social--mobile">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img
+                src="./img/footer/footer-google.svg"
+                alt=""
+                class="social-img"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img src="./img/footer/footer-yt.svg" alt="" class="social-img"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><img src="./img/footer/footer-x.svg" alt="" class="social-img"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><img
+                src="./img/footer/footer-face.svg"
+                alt=""
+                class="social-img"
+            /></a>
+          </div>
+          <div class="second__privacy second__privacy--mobile">
+            All rights reserved@2021
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
